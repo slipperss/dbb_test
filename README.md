@@ -10,6 +10,7 @@
 ## - The employee table is connected to the employee type table, types (Employee, Manager, Sales) are created, the employee type table stores percentage bonuses for the salaries of subordinates, years spent in the company and the maximum percentage of bonuses from salary, which gives dynamism
 ## - The salary takes into account all percentages for each type of employee + bonuses for the percentage of the sum of the final salaries of subordinates (all levels)
 ## - All basic calculations are made in raw sql queries and are as close as possible optimized for production
+## - The main logic is covered by unit tests
 
 ## In sql queries, a recursive approach is used for any nesting of subordinates for the correct calculation of salaries.
 
